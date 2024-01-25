@@ -1,0 +1,120 @@
+body {
+    font-family: Arial,Helvectia, sans-serif;
+    background-color: orange;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  h2 {
+    text-align: center;
+  }
+  .container {
+  position: relative;
+  border-radius: 10px;
+  background-color: yellow;
+  padding: 20px 0 30px 0;
+  width: 60%;
+  left: 20%;
+  margin-top: 10%;  
+  }
+  .col {
+  float: left;
+  width: 50%;
+  margin-top: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+  }
+  .row::after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+  .or {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border:2px solid green;
+    height: 175px;
+  }
+  .or-text {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #21b6a8;
+    color: black;
+    border:  1px solid red;
+    border-radius: 50%;
+    padding: 9px 12px;
+  }
+  .fb {
+    background-color:blue;
+    color: white;
+  }
+  .twitter {
+    background-color:black;
+    color: white;
+  }
+  .google{
+    background-color:red;
+    color: white;
+  }
+    .hide {
+      display: none;
+    }
+  input,
+  .btn {
+    width: 100%;
+    padding: 22px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    text-decoration: none;
+  }
+  input:hover,
+  .btn:hover {
+  opacity: 1;
+  }
+  input[type=submit] {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+  
+  }
+  input[type=submit]:hover {
+    background-color: green;  
+  }
+  .col a{
+    color: white;
+  }
+  .bottom-container {
+    text-align: center;
+    background-color: black;
+    position: relative;
+    border-radius: 0px 0px 4px 4px;
+    width: 60%;
+    left: 20%;
+  }
+  @media screen and (max-width: 750px) {
+    .container {
+      width: 100%;
+      left: 0;
+    }
+    .col {
+      width: 100%;
+      margin-top: 0;
+    }
+    .or {
+      display: none;
+    }
+    .hide {
+      display: block;
+      text-align: center;
+    }
+    .bottom-container {
+      width: 100%;
+      left: 0%;
+    }
+  }
